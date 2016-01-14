@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:minHeight="@dimen/toolbar_height"
+    android:background="@drawable/actionbar_background2"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:elevation="6dp"
+    >
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+     <EditText
+         android:id="@+id/act_pat_edittext"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_gravity="center"
+         android:hint="@string/edittext_hint"
+         android:background="@drawable/edittext_style"
+         android:textColorHint="@color/LightSkyBlue"
+         android:textColor="@color/Navy"
+         android:singleLine="true"
+         android:minHeight="30dp"
+         android:paddingLeft="10dp"
+         android:textSize="24sp"
+         >
+     </EditText>
+
+     <ImageView
+         android:id="@+id/act_pat_greydots"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingRight="@dimen/cardview_default_padding"
+         android:src="@drawable/menu_dots_grey" />
+   
+</LinearLayout>
+    
+</android.support.v7.widget.Toolbar>

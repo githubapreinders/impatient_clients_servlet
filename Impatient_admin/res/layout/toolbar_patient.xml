@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:minHeight="@dimen/toolbar_height"
+    android:background="@drawable/actionbar_background2"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:elevation="6dp"
+    >
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+     
+   
+
+    <ImageView
+        android:id="@+id/okay_patientact"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/toolbar_okay_selector" />
+
+    <ImageView
+        android:id="@+id/plus_patientact"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:src="@drawable/toolbar_plus_selector" />
+    
+      <ImageView
+        android:id="@+id/menudots_patientact"
+		android:paddingRight="@dimen/cardview_default_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_dots_grey" />
+   
+</LinearLayout>
+    
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/act_pat_toolbar"
+        layout="@layout/toolbar_patientlist" >
+    </include>
+
+    <ListView
+        android:layout_below="@+id/act_pat_toolbar"
+        android:id="@+id/act_pat_patientList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+    </ListView>
+
+</RelativeLayout>

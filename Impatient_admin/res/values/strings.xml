@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="app_name"></string>
+   
+   <string name="action_insertpatient">Insert into the list</string>
+   <string name="action_movepatientup">Move up</string>
+   <string name="action_movepatientdown">Move down</string>
+   
+   <string name="action_gotosessionviewactivity">Queue</string>
+   <string name="action_gotopatientlistactivity">Patients List</string>
+   <string name="action_gotoindivpatientactivity">New Appointment</string>
+   <string name="action_gotosettingsactivity">Settings</string>
+   <string name="action_gotohelpscreens">Help screen</string>
+   <string name="action_makenewpatient">New Patient</string>
+   <string name="action_logout">Log out</string>
+   <string name="action_delete">Remove</string>
+   <string name="action_cancel">Cancel</string>
+   <string name="action_confirm">Confirm</string>
+   
+   
+    <string name="action_settings">Options</string>
+    <string name="prompt_username">your username</string>
+    <string name="action_sign_in">Impatient Admin</string>
+    <string name="prompt_password">your password</string>
+    <string name="login_error_message">unknown username or password</string>
+    <string name="need_to_authenticate">login again please</string>
+     <string name="serverurl">https://10.0.2.2:8443</string>  
+     <string name="serverurl_galaxy1">https://192.168.43.173:8443</string>  
+     <string name="button_login">Sign In</string>  
+     <string name="username">jules</string>  
+     <string name="password">pass</string>  
+     <string name="footer_sessionlist">Terminate This Session</string>  
+     
+      <string name="edittext_hint">Search Patients</string>
+     
+      <string name="content_authority">afr.iterson.patientprovider</string>
+     
+      <string name="firstname">First Name</string>
+      <string name="lastname">Last Name</string>
+      <string name="medicalrecordid">Medical Record Id: </string>
+      <string name="accesscode">Access Code: </string>
+      <string name="birthdate">Birth Date</string>
+      <string name="appointmentdate">Appointment Date</string>
+      
+      <string name="settings">Settings</string>
+      <string name="treatment_time">treatment time</string>
+      <string name="therapy_machines">therapy machines</string>
+      <string name="minutes">minutes</string>
+      <string name="confirm">Confirm</string>
+      <string name="machines">machines</string>
+      
+      
+      
+      
+     
+      
+      
+     
+</resources>

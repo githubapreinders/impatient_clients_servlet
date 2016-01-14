@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">2dp</dimen>
+    <dimen name="activity_vertical_margin">2dp</dimen>
+	<dimen name="toolbar_height">110dp</dimen>
+	
+	<dimen name="cardview_default_radius">5dp</dimen>
+	<dimen name="cardview_default_elevation">5dp</dimen>
+	<dimen name="cardview_default_padding">5dp</dimen>
+	<dimen name="cardview_item_padding">5dp</dimen>
+	<dimen name="cardview_outside_padding">10dp</dimen>
+	
+	
+	
+	
+</resources>

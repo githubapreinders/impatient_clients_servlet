@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Impatient</string>
+    <string name="action_settings">Settings</string>
+    <string name="prompt_username">your username</string>
+    <string name="action_sign_in">Impatient</string>
+    <string name="prompt_password">your password</string>
+    <string name="button_login">Sign In</string>
+    <string name="login_error_message">unknown username or password</string>
+    <string name="need_to_authenticate">login again please</string>
+    <string name="login_message">Before you proceed you will have to give your credentials. We want to make sure it is you whom we are dealing with. After login you will be able to check in for treatment and view your estimated waiting time. You will only have to login once. Your credentials are your hospital medical record id and the access code you were given by the staff of the treatment center. \n Medical Record Id looks like 1234AB \nAccesscode looks like 1Q2J (four random symbols) </string>
+    <string name="sign_out">Sign Out</string>
+    
+
+	 <string name="username">9881MU</string>
+	 <string name="password">PM8Y</string>
+    <string name="serverurl">https://10.0.2.2:8443</string>
+    <string name="serverurl2">https://192.168.43.173:8443</string>
+    
+    <string name="waiting_time">waiting time :</string>
+    <string name="appointment_date">appointment date</string>
+    <string name="minutes">minutes</string>
+    <string name="dont_forget">don\'t forget to make a new appointment!</string>
+    
+    
+    <string name="status_checked_in">You are checked in</string>
+    <string name="status_temporary_unavailable ">You are 5 minutes delayed</string>
+    <string name="status_no_appointment ">No Appointment</string>
+    <string name="status_checked_out">You are checked OUT</string>
+    <string name="status_dressingroom">Its your turn now</string>
+    
+	<string name="message_checked_in">You are checked in. Your waiting time will be displayed. You will be notified when it is your turn.</string>
+    <string name="message_temporary_unavailable">No problem. Take as much time as you need. You remain checked in. Your waiting time might change a litte.</string>
+    <string name="message_no_appointment">There is no appointment today</string>
+    <string name="message_checked_out">There is an appointment for treatment today.</string>
+    <string name="message_dressingroom">Its your turn now. You can go to the dressing room now or consult a staff member if you are unsure about what to do.</string>
+    
+     <string name="button_check_in">Check In</string>
+     <string name="button_check_out">Check Out</string>
+     <string name="button_help">Help Screens</string>
+     <string name="button_delay">Take Delay</string>
+     <string name="button_delayback">I am Back</string>
+     
+    
+    
+</resources>

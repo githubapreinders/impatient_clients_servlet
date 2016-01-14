@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:fillViewport="true"
+    android:background="@drawable/listitem_selected"
+    android:paddingBottom="@dimen/cardview_outside_padding"
+    android:paddingLeft="@dimen/cardview_outside_padding"
+    android:paddingRight="@dimen/cardview_outside_padding"
+    android:paddingTop="@dimen/cardview_outside_padding" >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_patient_activity"
+        style="@style/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <LinearLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_cardview"
+            android:padding="@dimen/padding_mainscreen" >
+
+            <TextView
+                android:id="@+id/textview1_headertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/status_checked_in"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview2_statusmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"
+                android:text="@string/message_checked_in"
+                android:textColor="@color/Black"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview3a_estwaitingtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="@string/waiting_time" />
+
+                <TextView
+                    android:id="@+id/textview3b_itself"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/padding_mainscreen"
+                    android:text="25 "
+                    android:textColor="@color/Navy"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/textview3c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="15sp"
+                    android:text="@string/minutes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview4a_apptime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="@string/appointment_date" />
+
+                <TextView
+                    android:id="@+id/textview4b_itself"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:text="14:30" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:padding="@dimen/cardview_default_padding"
+                android:src="@drawable/patient_waiting_100" />
+
+            <Button
+                android:id="@+id/button_checkinorout"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/button_check_in" 
+                android:onClick="checkInOrOut"
+                android:background="@drawable/background_button_selector"
+                />
+
+            <Button
+                android:id="@+id/button_helpscreens"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="gotoHelp"
+                android:layout_margin="@dimen/cardview_default_padding"
+                android:background="@drawable/background_button_selector"
+                android:text="@string/button_help" />
+
+            <Button
+                android:id="@+id/button_pause"
+                android:layout_width="240dp"	
+				android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_button_selector"
+                android:onClick="delayOrUndelay"
+                android:text="@string/button_delay" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

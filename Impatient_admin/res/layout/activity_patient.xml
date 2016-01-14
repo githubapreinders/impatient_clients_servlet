@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_patient" >
+    </include>
+    
+    
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:paddingBottom="@dimen/cardview_outside_padding"
+    android:paddingLeft="@dimen/cardview_outside_padding"
+    android:paddingRight="@dimen/cardview_outside_padding"
+    android:paddingTop="@dimen/cardview_outside_padding" 
+    android:fillViewport="true"
+    android:background="@drawable/listitem_selected"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_patient_activity"
+        style="@style/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/cardview_default_padding"
+             >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/cardview_item_padding"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:text="@string/firstname"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edittext_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edittext_style"
+                    android:minHeight="30dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="24dp"
+                    >
+                     </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/cardview_item_padding"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:text="@string/lastname"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edittext_lasstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edittext_style2"
+                    android:minHeight="30dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="24dp"
+                     >
+                    
+                </EditText>
+            </LinearLayout>
+            
+            
+        
+           
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/cardview_item_padding"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_birthdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:text="@string/birthdate"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/edittext_birthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittext_style3"
+                    android:minHeight="30dp"
+					android:paddingLeft="10dp"
+                    android:textSize="24dp"
+                     />
+            </LinearLayout>
+            
+          <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/cardview_item_padding"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_appointmentdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:text="@string/appointmentdate"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/edittext_appointmentdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittext_style4"
+                    android:minHeight="30dp"
+					android:paddingLeft="10dp"
+                    android:textSize="24dp"
+                     />
+            </LinearLayout>
+            
+          
+          
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/cardview_item_padding"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_mrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:text="@string/medicalrecordid"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="16sp" />
+
+                
+                
+                  <TextView
+                    android:id="@+id/tv_mrid_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="2245VB"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="16sp" />
+                
+                          </LinearLayout>
+          
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" 
+                android:padding="@dimen/cardview_item_padding"
+                >
+
+                <TextView
+                    android:id="@+id/tv_accesscode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:text="@string/accesscode"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="16sp" />
+
+                
+                
+                  <TextView
+                    android:id="@+id/tv_accescode_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="A3J9"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="16sp" />
+                
+                          </LinearLayout>
+            
+          
+          
+          
+          
+          
+          
+            
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>
+
+</RelativeLayout>

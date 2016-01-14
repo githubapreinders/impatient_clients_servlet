@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="afr.iterson.impatient_patient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="@string/action_sign_in" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.PatientActivity" >
+        </activity>
+        <activity android:name=".activities.HelpActivity" >
+        </activity>
+		 <receiver android:name=".operations.NotificationReceiver" android:exported="false">
+		      <intent-filter>
+                <action android:name="afr.iterson.setnotified" />
+            </intent-filter>
+		 </receiver>
+        <service android:name="afr.iterson.impatient_patient.services.LoginService" />
+        <service android:name="afr.iterson.impatient_patient.services.PollingService" />
+        <service android:name="afr.iterson.impatient_patient.services.StatusService" />
+    </application>
+
+</manifest>

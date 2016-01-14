@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="afr.iterson.impatient_admin.SessionViewActivity" >
+
+   
+    <item
+        android:id="@+id/action_gotopatientlistactivity"
+       android:orderInCategory="200"
+        app:showAsAction="collapseActionView"
+        android:title="@string/action_gotopatientlistactivity"
+        />
+    
+     <item
+        android:id="@+id/action_gotoindivpatientactivity"
+        android:orderInCategory="300"
+        app:showAsAction="collapseActionView"
+        android:title="@string/action_gotoindivpatientactivity"
+        />
+    
+   
+       <item
+        android:id="@+id/action_gotosettingsactivity"
+        android:orderInCategory="400"
+        app:showAsAction="collapseActionView"
+        android:title="@string/action_gotosettingsactivity"
+        />
+     
+      <item
+        android:id="@+id/action_gotohelpscreens"
+        android:orderInCategory="500"
+        app:showAsAction="collapseActionView"
+        android:title="@string/action_gotohelpscreens"
+        />
+     
+
+       <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="600"
+        app:showAsAction="collapseActionView"
+        android:title="@string/action_logout"
+        />
+       
+</menu>
